@@ -112,6 +112,106 @@
                     <h3>Architecture Layers</h3>
                     <img src="images/architecture_layers.png" class="plain" width="100%">
                 </section>
+
+                <!-- Software Craftsmenship -->
+
+                <section>
+                    <section>
+                        <h1>Software Craftsmenship</h1>
+                    </section>
+                    <section>
+                        <img src="images/clean_code.jpg" class="plain">
+                    </section>
+                    <section>
+                        <img src="images/craftmenship_books.png" class="plain" >
+                    </section>
+                    <section>
+                        <h2>"We need to be professionals"</h2>
+                        <h2>"We will not ship shit"</h2>
+                        <h4>Bob Martin</h4>
+                        <small>
+                            <a href="http://gmusicant.com/robert-c-martin-demanding-professionalism-in-software-development">Demanding Professionalism in Software Development</a>
+                        </small>
+                    </section>
+                    <section>
+                        <h2>"Not Just Code Monkeys"</h2>
+                        <h4>Martin Fowler</h4>
+                        <small>
+                            <a href="https://www.youtube.com/watch?v=Z8aECe4lp44">OOP 2014 Keynote</a>
+                        </small>
+                    </section>
+                    <section>
+                        <h2>Agile Manifesto</h2>
+                        <p><strong>Individuals and interactions</strong> over processes and tools</p>
+                        <p><strong>Working software</strong> over comprehensive documentation</p>
+                        <p><strong>Customer collaboration</strong> over contract negotiation</p>
+                        <p><strong>Responding to change</strong> over following a plan</p>
+                        <p class="fragment"><strong>Craftsmanship</strong> over Execution <sup>*)</sup></p>
+                        <small>
+                            <p><a href="http://agilemanifesto.org">http://agilemanifesto.org</a></p>
+                            <p class="fragment"><a href="https://www.infoq.com/news/2008/08/manifesto-fifth-craftsmanship">*) https://www.infoq.com/news/2008/08/manifesto-fifth-craftsmanship</a></p>
+                        </small>
+                    </section>
+                    <section tagcloud>
+                        Clean Code
+                        Clean Architecture
+                        Object Oriented Design Patterns
+                        Object Oriented Design Principles
+                        Software Architecture
+                        Domain Driven design
+                        Refactoring
+                        Pair Programming
+                        Code Review
+                        Coding Dojos
+                        Test Driven Design (TDD)
+                    </section>
+                    <section>
+                        <h2>SOLID</h2>
+                        <ul>
+                            <li class="fragment"><strong>S</strong>ingle Responsibility Principle</li>
+                            <li class="fragment"><strong>O</strong>pen/Closed Principle</li>
+                            <li class="fragment"><strong>L</strong>iskov's Substitution Principle</li>
+                            <li class="fragment"><strong>I</strong>nterface Segregation Principle</li>
+                            <li class="fragment"><strong>D</strong>ependency Inversion Principle</li>
+                        </ul>
+                        <aside class="notes">
+                            Klassen sollten einen einzelnen Zweck erfüllen, und daher nur einen Grund zur Änderung haben
+                            Die Funktionalität einer Klasse sollte erweiterbar sein, ohne sie zu verändern. (Open for extension, closed for modification)
+                            Subklassen sollten die Semantik ihrer Überklassen nicht verändern. Dadurch sollten Objekte durch Instanzen ihrer Subklassen ersetzbar sein, ohne Fehler zu verursachen.
+                            Interfaces sollen so wenige Methoden definieren, dass implementierende Klassen keine Methoden implementieren müssen, die nicht benutzt werden.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Single Responsibility Principle</h2>
+                        <p><em>A class should have only one reason to change</em></p>
+                    </section>
+                    <section>
+                        <h2>Open-Closed Principle</h2>
+                        <p><em>You should be able to extend a classes behavior, without modifying it</em></p>
+                    </section>
+                    <section>
+                        <h2>Liskov Substitution Principle</h2>
+                        <p><em>Derived classes must be substitutable for their base classes</em></p>
+                    </section>
+                    <section>
+                        <h2>Interface Segregation Principle</h2>
+                        <p><em>Make fine grained interfaces that are client specific</em></p>
+                    </section>
+                    <section>
+                        <h2>Dependency Inversion Principle</h2>
+                        <p><em>Depend on abstractions, not on concretions</em></p>
+                    </section>
+                    <section>
+                        <h2>Enforcing Clean Code</h2>
+                        <ul>
+                            <li>Pair Programming</li>
+                            <li>Code Review</li>
+                            <li>Static Code Analysis (e.g. PMD, FindBugs)</li>
+                            <li>Coding Dojos</li>
+                        </ul>
+                    </section>
+                </section>
+
                 <section data-background="images/background_normal.png" data-background-size="75%">
                     <h2>Typical Sensitive Data</h2>
                     <h4 class="fragment fade-up">Passwords</h4>
