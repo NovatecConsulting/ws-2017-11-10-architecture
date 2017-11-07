@@ -138,6 +138,16 @@
                         <h1>What is Software Architecture?</h1>
                         <img src="images/5mins.png" class="plain" width="150px">
                     </section>
+                    <section>
+                        &ldquo;Software architecture refers to the <u>high level structures</u> of a software system, the discipline of creating such structures, and the documentation of these structures...
+                        <br>...Software architecture is about making fundamental structural choices which are <u>costly to change</u> once implemented.&rdquo;
+                        <p><small><a href="https://en.wikipedia.org/wiki/Software_architecture">Wikipedia</a></small></p>
+                    </section>
+                    <section>
+                        &ldquo;Architecture is about <u>making some important decisions</u> that we'll have some long lasting effects on your system.<br>
+                        If you ignore architecture and rush into software development by trying to drive software development solely with the functional visible part of it, you are running very rapidly into <u>technical debt</u>.&rdquo;
+                        <p><small><a href="https://www.infoq.com/interviews/philippe-kruchten-technical-debt">Philippe Kruchten (2010)</a></small></p>
+                    </section>
                     <section tagcloud>
                         Clean Code
                         Architectural Patterns
@@ -157,11 +167,6 @@
                         Quality
                         Documentation
                         Review
-                    </section>
-                    <section>
-                        <h3>EU General Data Protection Regulation (GDPR)</h3>
-                        &ldquo;An architecture is the set of significant decisions about the organization of a software system, the selection of structural elements and their interfaces by which the system is composed, together with their behavior as specified in the collaborations among those elements, the composition of these elements into progressively larger subsystems, and the architectural style that guides this organization -- these elements and their interfaces, their collaborations, and their composition.&rdquo;
-                        <p><small><a href="http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679">http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679 (78)</a></small></p>
                     </section>
                 </section>
 
@@ -219,6 +224,35 @@
                             <li>Static Code Analysis (e.g. PMD, FindBugs)</li>
                             <li>Coding Dojos</li>
                         </ul>
+                    </section>
+                </section>
+
+                <!-- Spring Introduction -->
+
+                <section>
+                    <section>
+                        <img src="images/diagram-boot-reactor.svg" class="plain" width="70%">
+                        <p><small><a href="https://spring.io">https://spring.io</a></small></p>
+                    </section>
+                    <section>
+                        <img src="images/spring_initlizr.png" class="plain" width="100%">
+                        <p><small><a href="https://start.spring.io">https://start.spring.io</a></small></p>
+                    </section>
+                    <section>
+                        <pre><code class="xml" data-trim>
+                            <parent>
+                                <groupId>org.springframework.boot</groupId>
+                                <artifactId>spring-boot-starter-parent</artifactId>
+                                <version>2.0.0.M6</version>
+                            </parent>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>org.springframework.boot</groupId>
+                                    <artifactId>spring-boot-starter-web</artifactId>
+                                </dependency>
+                                ...
+                            </dependencies>
+                        </code></pre>
                     </section>
                 </section>
 
