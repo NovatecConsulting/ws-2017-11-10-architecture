@@ -68,6 +68,7 @@
                             <li>Maven</li>
                             <li>IntelliJ or Eclipse IDE (STS)</li>
                         </ul>
+                        <p><img src="images/workshop-1345512_1920.jpg" class="plain" width="30%"></p>
                     </section>
                     <section>
                         <h2>Participants Introduction</h2>
@@ -163,8 +164,46 @@
                         <p><small><a href="https://www.infoq.com/interviews/philippe-kruchten-technical-debt">Philippe Kruchten (2010)</a></small></p>
                     </section>
                     <section>
+                        <h2>Goal of Architecture</h2>
                         &ldquo;The goal of software architecture is to <u>minimize the human resources</u> required to build and maintain the required system.&rdquo;
                         <p><small><a href="https://www.infoq.com/interviews/philippe-kruchten-technical-debt">Bob Martin (2017)</a></small></p>
+                    </section>
+                    <section>
+                        <h2>Architectural Concerns</h2>
+                        <h4>Resilience</h4>
+                        <h4>Security</h4>
+                        <h4>Deployability</h4>
+                        <h4>Testability</h4>
+                        <p><img src="images/release_it.jpg" class="plain" width="25%"></p>
+                    </section>
+                    <section>
+                        <h2>Resilience</h2>
+                        <p>The ability of an app to recover from certain types of failure and yet remain functional from the customer perspective.</p>
+                        <ul>
+                            <li>Mean Time Between Failures (MTBF)</li>
+                            <li>Mean Time to Repair/Recover (MTTR)</li>
+                        </ul>
+                    </section>
+                    <section data-background="images/background_normal.png" data-background-size="75%">
+                        <h2>Security</h2>
+                        <h3>EU General Data Protection Regulation (GDPR)</h3>
+                        &ldquo;...should adopt internal policies and implement measures which meet in particular the principles of <u>data protection by
+                        design</u> and <u>data protection by default</u>&rdquo;
+                        <p><small><a href="http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679">http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679 (78)</a></small></p>
+                    </section>
+                    <section data-background="images/background_normal.png" data-background-size="75%">
+                        <h3>A3: Sensitive Data Exposure</h3>
+                        <img src="images/owasp_top_10_2017_rc2_changes.png" class="plain" width="80%">
+                        <p><small><a href="https://github.com/OWASP/Top10">OWASP Top 10 2017 RC 2 - https://github.com/OWASP/Top10</a></small></p>
+                    </section>
+                    <section>
+                        <h2>Deployability</h2>
+                        &ldquo;Releasing to production should be a boring stupid process&rdquo;
+                        <p>Jez Humble (Author of book "Continuous Delivery")</p>
+                    </section>
+                    <section>
+                        <h2>Testability</h2>
+                        <p>Test automation is key for Continuous Delivery!</p>
                     </section>
                     <section tagcloud>
                         Clean Code
@@ -186,6 +225,10 @@
                         Documentation
                         Review
                     </section>
+                    <section>
+                        <h2>What about your Architectural Concerns?</h2>
+                        <p><img src="images/30mins.png" class="plain" width="150px"></p>
+                    </section>
                 </section>
 
                 <!-- Architectural Patterns -->
@@ -206,15 +249,39 @@
                     </section>
                     <section>
                         <h2>Client/Server</h2>
+                        <h4>Fat/Thin Client - Fat Server</h4>
+                        <h4>CORBA</h4>
                     </section>
                     <section>
                         <h2>Enterprise Application Integration</h2>
-                        &ldquo;collection of technologies and services which form a middleware or "middleware framework" to enable integration of systems and applications across an enterprise.&rdquo;
+                        &ldquo;A collection of technologies and services which form a middleware or "middleware framework" to enable integration of systems and applications across an enterprise.&rdquo;
                         <p><small><a href="https://en.wikipedia.org/wiki/Enterprise_application_integration">Wikipedia</a></small></p>
                     </section>
                     <section>
                         <h2>Service Oriented Architecture (SOA)</h2>
                         <h4>Enterprise Service Bus (ESB)</h4>
+                        <h4>&ldquo;Water-Fall Fat Microservices&rdquo;</h4>
+                    </section>
+                    <section>
+                        <h2>Layered Architecture</h2>
+                        <h4>&ldquo;Entity-Control-Boundary-Pattern&rdquo;</h4>
+                        <p><img src="images/entity_boundary_control_pattern.png" class="plain" width="50%"></p>
+                        <p><small><a href="https://www.youtube.com/watch?v=grJC6RFiB58">Structuring Java EE 7 Apps (Adam Bien)</a></small></p>
+                    </section>
+                    <section>
+                        <h2>Model View Controller (MVC)</h2>
+                        &ldquo;Pattern for implementing user interfaces on computers. It divides a given application into three interconnected parts.&rdquo;
+                        <p><small><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Wikipedia</a></small></p>
+                    </section>
+                    <section>
+                        <h2>Domain Driven Design (DDD)</h2>
+                        <p><img src="images/ddd_book.jpg" class="plain" width="35%"></p>
+                        <p><small><a href="https://martinfowler.com/tags/domain%20driven%20design.html">DDD @ https://martinfowler.com</a></small></p>
+                    </section>
+                    <section>
+                        <h2>Microservices</h2>
+                        <p><small><a href="http://isa-principles.org">http://isa-principles.org</a></small></p>
+                        <p><small><a href="https://www.youtube.com/watch?v=S_h1t9dG3yQ">Video: Beyond Microservices (W-JAX 2017, Eberhard Wolff)</a></small></p>
                     </section>
                     <section>
                         <h2>The Well Defined Monolith</h2>
@@ -225,9 +292,81 @@
                         <img src="images/monolith_ball_of_mud.png" class="plain">
                     </section>
                     <section>
-                        <h2>Serverless</h2>
+                        <h2>From Monolith to Microservices</h2>
+                        <img src="images/monolith_microservices.png" class="plain">
+                    </section>
+                    <section>
+                        <h2>Autonomic Microservices</h2>
+                        <img src="images/autonomic_microservices.png" class="plain">
+                    </section>
+                    <section>
+                        <img src="images/microservice_scaling.png" class="plain">
+                    </section>
+                    <section>
+                        <img src="images/microservices_resilience.png" class="plain">
+                    </section>
+                    <section>
+                        <img src="images/microservice_eventual_consistency.png" class="plain">
+                    </section>
+                    <section>
+                        <h2>CI Pipelines for Microservices</h2>
+                        <img src="images/microservices_ci_pipeline.png" class="plain">
+                    </section>
+                    <section>
+                        <h2>Size of Microservices (I)</h2>
+                        <img src="images/microservice_size.png" class="plain">
+                    </section>
+                    <section>
+                        <h2>Size of Microservices (II)</h2>
+                        <img src="images/microservice_bounded_contexts.png" class="plain">
+                    </section>
+                    <section>
+                        <h2>Size of Microservices (III)</h2>
+                        <img src="images/microservice_dev_teams.png" class="plain">
+                    </section>
+                    <section>
+                        <h2>Size of Microservices (IV)</h2>
+                        <img src="images/microservice_natural_size.png" class="plain">
+                    </section>
+                    <section>
+                        <h2>Serverless (FAAS)</h2>
+                        &ldquo;Applications where some amount of server-side logic is still written by the application developer but unlike traditional architectures is run in stateless compute containers that are event-triggered, ephemeral (may only last for one invocation), and fully managed by a 3rd party.&rdquo;
+                        <p><small><a href="https://martinfowler.com/articles/serverless.html">Martin Fowler</a></small></p>
+                    </section>
+                    <section>
+                        <h2>Serverless Providers</h2>
+                        <p><a href="https://aws.amazon.com/lambda/details/">AWS Lambda</a></p>
+                        <p><a href="https://azure.microsoft.com/en-us/services/functions">Azure Functions</a></p>
+                        <p><a href="https://cloud.google.com/functions">Google Cloud Functions</a></p>
+                    </section>
+                    <section>
+                        <h2>Cloud Native (I)</h2>
+                        &ldquo;Cloud-native is an approach to building and running applications that fully exploits the advantages of the cloud computing delivery model.&rdquo;
+                        <p><small><a href="https://pivotal.io/cloud-native">pivotal.io</a></small></p>
+                    </section>
+                    <section>
+                        <h2>Cloud Native (II)</h2>
+                        <h4>The Twelve Factory App</h4>
+                        <p><small><a href="https://12factor.net">https://12factor.net</a></small></p>
+                    </section>
+                    <section>
+                        <h2>Cloud Native (III)</h2>
+                        <h4>On Premise</h4>
+                        <h4>Infrastructure as a service (IaaS)</h4>
+                        <h4>Platform as a service (PaaS)</h4>
+                        <h4>Software as a service (SaaS)</h4>
+                        <h4>Function as a service (FaaS)</h4>
+                    </section>
+                    <section>
+                        <h2>Cloud Native (IV)</h2>
+                        <p><img src="images/cloud_service_models.png" class="plain" width="85%"></p>
+                    </section>
+                    <section>
+                        <h2>Which Architectural Patterns do you use?</h2>
+                        <p><img src="images/30mins.png" class="plain" width="150px"></p>
                     </section>
                 </section>
+
                 <!-- Design Patterns -->
 
                 <section>
@@ -280,6 +419,26 @@
                         <h4>...</h4>
                     </section>
                     <section>
+                        <h2>Other Patterns</h2>
+                    </section>
+                    <section>
+                        <h4>Event Sourcing &</h4>
+                        <h4>Command Query Responsibility Segregation (CQRS)</h4>
+                        <p><img src="images/event_sourcing.jpeg" class="plain" width="50%"></p>
+                        <p><small><a href="https://www.confluent.io/blog/event-sourcing-cqrs-stream-processing-apache-kafka-whats-connection">https://www.confluent.io/blog/event-sourcing-cqrs-stream-processing-apache-kafka-whats-connection</a></small></p>
+                    </section>
+                    <section>
+                        <h2>Reactive Systems</h2>
+                        &ldquo;Systems that are Responsive, Resilient, Elastic and Message Driven. We call these Reactive Systems.&rdquo;
+                        <p><small><a href="https://www.reactivemanifesto.org">The Reactive Manifesto</a></small></p>
+                    </section>
+                    <section>
+                        <h2>Reactive Systems Implementations</h2>
+                        <p><a href="https://akka.io">akka</a></p>
+                        <p><a href="https://projectreactor.io">Reactor</a></p>
+                        <p><a href="https://github.com/ReactiveX/RxJava">RxJava</a></p>
+                    </section>
+                    <section>
                         <h2>Design Principles</h2>
                     </section>
                     <section>
@@ -316,17 +475,49 @@
                         <h2>Dependency Inversion Principle</h2>
                         <p><em>Depend on abstractions, not on concretions</em></p>
                     </section>
+                    <section>
+                        <h2>Keep it simple, stupid (KISS)</h2>
+                        &ldquo;Simplicity should be a key goal in design and unnecessary complexity should be avoided.&rdquo;
+                        <p><small><a href="https://en.wikipedia.org/wiki/KISS_principle">Wikipedia</a></small></p>
+                    </section>
+                    <section>
+                        <h2>You Aren't Gonna Need It (YAGNI)</h2>
+                        &ldquo;A mantra from Extreme Programming that's often used generally in agile software teams. It's a statement that some capability we presume our software needs in the future should not be built now.&rdquo;
+                        <p><small><a href="https://martinfowler.com/bliki/Yagni.html">Martin Fowler</a></small></p>
+                    </section>
                 </section>
 
                 <section>
                     <section>
                         <h1>Architecture Lab</h1>
+                        <img src="images/workshop-1345512_1920.jpg" class="plain" width="50%">
                     </section>
                     <section>
                         <h1>Target?</h1>
                         <h3>Java EE</h3>
                         <h3>EE4J</h3>
                         <h3>Spring</h3>
+                    </section>
+                    <section>
+                        <h2>Java EE</h2>
+                        <p>Java EE 8 is final...</p>
+                        <p>...but NO commercial AppServer available!</p>
+                        <p>...and NO standards for modern security, NoSQL, Cloud</p>
+                    </section>
+                    <section>
+                        <h3>Eclipse Enterprise for Java (EE4J)</h3>
+                        <p>&ldquo;A nimble, flexible and open process for evolving EE4J standard APIs, implementations of those APIs, and technology compatibility kits.&rdquo;</p>
+                        <p>Baseline is Java EE 8</p>
+                        <p>We will see what the future brings...</p>
+                        <p><small><a href="https://projects.eclipse.org/projects/ee4j">https://projects.eclipse.org/projects/ee4j</a></small></p>
+                    </section>
+                    <section>
+                        <h2>Spring Platform</h2>
+                        <p>Proven Cloud Native Java (Kotlin) Platform</p>
+                        <p>Great support for NoSQL, BigData, Reactive</p>
+                        <p>Modern Security (OAuth2, OpenID Connect)</p>
+                        <p>Compatible with Java EE 7 & 8</p>
+                        <h4>=> We will use Spring</h4>
                     </section>
                 </section>
 
@@ -335,13 +526,14 @@
                 <section>
                     <section>
                         <h1>Spring Platform</h1>
+                        <p><small><a href="https://spring.io">https://spring.io</a></small></p>
                     </section>
                     <section>
                         <h2>Spring Principles</h2>
-                        <p>Lightweight Development using POJOs</p>
-                        <p>Dependency Injection (Inversion of Control)</p>
-                        <p>Reduction of Boilerplate Code</p>
-                        <p>Simplify Development</p>
+                        <h4>Lightweight Development using POJOs</h4>
+                        <h4>Dependency Injection (Inversion of Control)</h4>
+                        <h4>Reduction of Boilerplate Code</h4>
+                        <h4>Simplify Development</h4>
                     </section>
                     <section data-background="images/javaee_app_server_container.png" data-background-size="80%">
                     </section>
@@ -375,6 +567,10 @@
 
                 <!-- The end -->
 
+                <section>
+                    <img src="images/target.jpg" class="plain">
+                </section>
+
                 <section data-background="images/background_normal.png" data-background-size="75%">
                     <h1>Q&A</h1>
                     <p>http://www.novatec-gmbh.de</br>
@@ -386,12 +582,9 @@
                     <h2>References</h2>
                     <small>
                         <ul>
-                            <li><a href="https://cloud.spring.io/spring-cloud-config/">Spring Cloud Config (https://cloud.spring.io/spring-cloud-config/)</a></li>
-                            <li><a href="https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing">Shamir's secret sharing (https://en.wikipedia.org/wiki/Shamir's_Secret_Sharing)</a></li>
-                            <li><a href="https://cloud.spring.io/spring-cloud-vault">Spring Cloud Vault (https://cloud.spring.io/spring-cloud-vault)</a></li>
-                            <li><a href="https://www.vaultproject.io">Vault (https://www.vaultproject.io)</a></li>
-                            <li><a href="https://github.com/hashicorp/vault-service-broker">Cloud Foundry Vault Service Broker (https://github.com/hashicorp/vault-service-broker)</a></li>
-                            <li><a href="https://github.com/andifalk/cf-summit-2017">Sources and Presentation (https://github.com/andifalk/cfsummit2017)</a></li>
+                            <li><a href="https://github.com/nt-ca-aqe/ws-2017-11-10-architecture">Presentation and Workshop:<br> https://github.com/nt-ca-aqe/ws-2017-11-10-architecture</a></li>
+                            <li><a href="https://cloud.spring.io">Spring Cloud (https://cloud.spring.io)</a></li>
+                            <li><a href="https://projects.spring.io/spring-boot">Spring Boot (https://projects.spring.io/spring-boot)</a></li>
                         </ul>
                         <p>All images used are from <a href="https://pixabay.com/">Pixabay</a> and are published under <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">Creative Commons CC0 license.</a></p>
                         All used logos are trademarks of corresponding companies
