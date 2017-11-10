@@ -2,6 +2,7 @@
 This repository contains the content of the architecture workshop on 2017-11-10.
 
 [Presentation](https://nt-ca-aqe.github.io/ws-2017-11-10-architecture/presentation)
+[Download presentation (pdf format)](https://github.com/nt-ca-aqe/ws-2017-11-10-architecture/raw/master/Software%20Architecture.pdf)
 
 ## PersonApp
 This demo shows how to implement a layered architecture with spring using 
