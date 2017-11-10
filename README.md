@@ -9,3 +9,8 @@ This repository contains the content of the architecture workshop on 2017-11-10.
 This demo shows how to implement a layered architecture with spring using 
 spring web and spring security. During startup the demo application already creates some person test data.
 
+## PersonAppReactive
+This demo shows how to implement a layered architecture with spring using 
+reactive spring web (flux) and reactive spring security. During startup the demo application already creates some person test data.
+
+
