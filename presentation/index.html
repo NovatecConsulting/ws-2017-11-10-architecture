@@ -180,8 +180,8 @@
                         <h2>Resilience</h2>
                         <p>The ability of an app to recover from certain types of failure and yet remain functional from the customer perspective.</p>
                         <ul>
-                            <li>Mean Time Between Failures (MTBF)</li>
-                            <li>Mean Time to Repair/Recover (MTTR)</li>
+                            <li style="color: darkred">Mean Time Between Failures (MTBF)</li>
+                            <li style="color: darkgreen">Mean Time to Repair/Recover (MTTR)</li>
                         </ul>
                     </section>
                     <section data-background="images/background_normal.png" data-background-size="75%">
@@ -280,6 +280,7 @@
                     </section>
                     <section>
                         <h2>Microservices</h2>
+                        &ldquo;Agile SOA&rdquo;
                         <p><small><a href="http://isa-principles.org">http://isa-principles.org</a></small></p>
                         <p><small><a href="https://www.youtube.com/watch?v=S_h1t9dG3yQ">Video: Beyond Microservices (W-JAX 2017, Eberhard Wolff)</a></small></p>
                     </section>
@@ -374,6 +375,31 @@
                         <h1>Design Patterns & Principles</h1>
                     </section>
                     <section>
+                        <h2>Symptoms of Rotting Design</h2>
+                        <h4>Rigidity</h4>
+                        <h4>Fragility</h4>
+                        <h4>Immobility</h4>
+                        <h4>Viscosity</h4>
+                    </section>
+                    <section>
+                        <h2>Rigidity</h2>
+                        <p>Every change causes a cascade of subsequent changes in dependent modules.</p>
+                    </section>
+                    <section>
+                        <h2>Fragility</h2>
+                        <p> Fragility is the tendency of the software to break in many places every time it is changed. Often the breakage occurs
+                            in areas that have no conceptual relationship with the area that was changed.</p>
+                    </section>
+                    <section>
+                        <h2>Immobility</h2>
+                        <p>Inability to reuse software from other projects or from parts of the same project.</p>
+                    </section>
+                    <section>
+                        <h2>Viscosity</h2>
+                        <p>When faced with a change, engineers usually find more than one way to make the change.
+                            Some of the ways preserve the design, others do not (i.e. they are hacks.) </p>
+                    </section>
+                    <section>
                         <img src="images/design_patterns_book.jpg" class="plain" width="50%">
                     </section>
                     <section>
@@ -443,21 +469,16 @@
                     </section>
                     <section>
                         <h2>SOLID</h2>
-                        <p data-autoslide="2000" class="fragment" style="color: darkblue"><strong style="font-size: 1.5em">S</strong>ingle Responsibility Principle</p>
-                        <p data-autoslide="2000" class="fragment" style="color: darkblue"><strong style="font-size: 1.5em">O</strong>pen/Closed Principle</p>
-                        <p data-autoslide="2000" class="fragment" style="color: darkblue"><strong style="font-size: 1.5em">L</strong>iskov's Substitution Principle</p>
-                        <p data-autoslide="2000" class="fragment" style="color: darkblue"><strong style="font-size: 1.5em">I</strong>nterface Segregation Principle</p>
-                        <p data-autoslide="0" class="fragment" style="color: darkblue"><strong style="font-size: 1.5em">D</strong>ependency Inversion Principle</p>
-                        <aside class="notes">
-                            Klassen sollten einen einzelnen Zweck erfüllen, und daher nur einen Grund zur Änderung haben
-                            Die Funktionalität einer Klasse sollte erweiterbar sein, ohne sie zu verändern. (Open for extension, closed for modification)
-                            Subklassen sollten die Semantik ihrer Überklassen nicht verändern. Dadurch sollten Objekte durch Instanzen ihrer Subklassen ersetzbar sein, ohne Fehler zu verursachen.
-                            Interfaces sollen so wenige Methoden definieren, dass implementierende Klassen keine Methoden implementieren müssen, die nicht benutzt werden.
-                        </aside>
+                        <p class="fragment" style="color: darkblue"><strong style="font-size: 1.5em">S</strong>ingle Responsibility Principle</p>
+                        <p class="fragment" style="color: darkblue"><strong style="font-size: 1.5em">O</strong>pen/Closed Principle</p>
+                        <p class="fragment" style="color: darkblue"><strong style="font-size: 1.5em">L</strong>iskov's Substitution Principle</p>
+                        <p class="fragment" style="color: darkblue"><strong style="font-size: 1.5em">I</strong>nterface Segregation Principle</p>
+                        <p class="fragment" style="color: darkblue"><strong style="font-size: 1.5em">D</strong>ependency Inversion Principle</p>
                     </section>
                     <section>
                         <h2>Single Responsibility Principle</h2>
                         <p><em>A class should have only one reason to change</em></p>
+                        No &ldquo;God Classes&rdquo;
                     </section>
                     <section>
                         <h2>Open-Closed Principle</h2>
@@ -502,7 +523,7 @@
                         <h2>Java EE</h2>
                         <p>Java EE 8 is final...</p>
                         <p>...but NO commercial AppServer available!</p>
-                        <p>...and NO standards for modern security, NoSQL, Cloud</p>
+                        <p>...and still NO standards for modern security, NoSQL, Cloud</p>
                     </section>
                     <section>
                         <h3>Eclipse Enterprise for Java (EE4J)</h3>
